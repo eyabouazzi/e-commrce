@@ -1,0 +1,37 @@
+{
+	"name": "e-commerce-store",
+	"version": "1.0.0",
+	"description": "",
+	"main": "backend/server.js",
+	"scripts": {
+		"dev": "kill-port 5000 && nodemon backend/server.js",
+		"start": "kill-port 5000 && node backend/server.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+	},
+	"keywords": [],
+	"author": "",
+	"type": "module",
+	"license": "ISC",
+	"dependencies": {
+		"@paypal/paypal-server-sdk": "^1.0.3",
+		"axios-cookiejar-support": "^6.0.4",
+		"bcryptjs": "^2.4.3",
+		"cookie-parser": "^1.4.6",
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"ioredis": "^5.4.1",
+		"jsonwebtoken": "^9.0.2",
+		"mongodb": "^6.20.0",
+		"mongoose": "^8.5.3",
+		"nodemailer": "^7.0.10",
+		"passport": "^0.7.0",
+		"passport-facebook": "^3.0.0",
+		"passport-google-oauth20": "^2.0.0",
+		"stripe": "^19.1.0",
+		"tough-cookie": "^5.1.2"
+	},
+	"devDependencies": {
+		"kill-port": "^2.0.1",
+		"nodemon": "^3.1.4"
+	}
+}
